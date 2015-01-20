@@ -1,6 +1,7 @@
 var app2 = angular.module('loginApp',[]);
 
-var routerApp = angular.module('routerApp',['ui.router','dashboardApp']);
+var routerApp = angular.module('routerApp',['ui.router','home','hcc','trends','dashboardApp']);
+
 	routerApp.filter('slice', function() {
 	  return function(arr, start, end) {
 	    return arr.slice(start, end);
@@ -14,29 +15,14 @@ routerApp.config(
 	//$urlRouterProvider.otherwise('/dashboard');
 
 	$stateProvider
-		/*
-		.state('dashboard',{
-			url: '/dashboard',
-			templateUrl: 'dashboard.html',
-			controller: function($scope){
-				$scope.message='ng-work';
-			}
-		})
-		*/
-		.state('hcc',{
-			url: '/hcc',
-			templateUrl: 'hcc.html',
-			controller: function($scope){
-				$scope.message='ng-work';
-			}
-		})
-		.state('trends',{
-			url: '/trends',
-			templateUrl: 'trends.html',
-			controller: function($scope){
-				$scope.message='ng-work';
-			}
-		})
+
+		
+
+
+	
+
+
+
 		.state('its',{
 			url: '/its',
 			templateUrl: 'its.html',

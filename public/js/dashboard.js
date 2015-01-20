@@ -7,7 +7,7 @@ var dashboardApp = angular.module('dashboardApp',['ui.router'])
 		});
 	})
 	.controller('dashboardCtrl',function(){
-					var aaaaa =0;
+					
 		var ctx0 = $("#myChart0").get(0).getContext("2d");
 		var ctx1 = $("#myChart1").get(0).getContext("2d");
 		var ctx2 = $("#myChart2").get(0).getContext("2d");

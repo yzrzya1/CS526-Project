@@ -1,5 +1,9 @@
 .logo-img{height: 40px;width: 300px;}
-.logo-go-right{position:absolute;right:30px;bottom:0px}
+.logo-font{font-size: 200%;font-weight: bold;padding-left: 1cm;float: left;color: #000000;}
+
+.logo-go-right{position:absolute;right:30px;float: right;bottom:0px}
+
+
 .navbar-default{ height: 60px}
 
 /* enable absolute positioning */
@@ -63,3 +67,15 @@ hr {
 
 .gobule{ color:#337AB7;}
 
+
+
+
+svg {
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
