@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dashboard</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -21,17 +22,17 @@
     <script src="js/home.js"></script>
     <script src="js/hcc.js"></script>
     <script src="js/trends.js"></script>
-   
+    <script type="text/javascript" src="js/showMe.js"></script>
 
 </head>
 
 <body ng-app="routerApp">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 			<div class="col-md-12">
 
 				<nav class="navbar navbar-default" role="navigation">
-				  <div class="container-fluid">
+				   
 				    <div class="navbar-header">
 				    	<!--
 				      <a class="navbar-brand" href="#">
@@ -45,11 +46,11 @@
 				  	<span class='logo-font'>Employee Management System</span>
 						 </a>
 				    </div>
-				  </div>
+				  
 				  <div class="collapse navbar-collapse logo-go-right">
 				  	<ul class="nav navbar-nav pull-right">
 					<li class="dropdown">
-				  	 <a ui-sref="dashboard" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="fa fa-envelope gobule"></i><i class="fa fa-caret-down gobule"></i></a>
+				  	 <a ng-click="navbarCollapsed = !navbarCollapsed" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="fa fa-envelope gobule"></i><i class="fa fa-caret-down gobule"></i></a>
 					          <ul class="dropdown-menu" role="menu">
 					            <li><a href="#">message 1</a></li>
 					            <li><a href="#">message 2</a></li>
@@ -61,7 +62,7 @@
 					          </ul>
 						</li>
 					<li class="dropdown">
-				  	 <a ui-sref="dashboard" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="fa fa-tasks gobule"></i><i class="fa fa-caret-down gobule"></i></a>
+				  	 <a ng-click="navbarCollapsed = !navbarCollapsed" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="fa fa-tasks gobule"></i><i class="fa fa-caret-down gobule"></i></a>
 					          <ul class="dropdown-menu" role="menu">
 					            <li><a href="#">message 1</a></li>
 					            <li><a href="#">message 2</a></li>
@@ -73,7 +74,7 @@
 					          </ul>
 						</li>
 					<li class="dropdown">
-				  	 <a ui-sref="dashboard" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="fa fa-bell-o gobule"></i><i class="fa fa-caret-down gobule"></i></a>
+				  	 <a ng-click="navbarCollapsed = !navbarCollapsed" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="fa fa-bell-o gobule"></i><i class="fa fa-caret-down gobule"></i></a>
 					          <ul class="dropdown-menu" role="menu">
 					            <li><a href="#">message 1</a></li>
 					            <li><a href="#">message 2</a></li>
@@ -85,7 +86,7 @@
 					          </ul>
 						</li>
 					<li class="dropdown">
-				  	 <a ui-sref="dashboard" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="fa fa-user gobule"></i><i class="fa fa-caret-down gobule"></i></a>
+				  	 <a ng-click="navbarCollapsed = !navbarCollapsed" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="fa fa-user gobule"></i><i class="fa fa-caret-down gobule"></i></a>
 					          <ul class="dropdown-menu" role="menu">
 					            <li><a href="#">message 1</a></li>
 					            <li><a href="#">message 2</a></li>
@@ -103,15 +104,13 @@
 			</div>
 			</div>
 <!-- ********************** nav ***************-->
-	<div class="container">
-	<div class="row">
+	
 	<div class="col-md-12">
 
 
 
 
-		<div class="container">
-			<div class="row">
+		
 			<div class="col-md-3">
 				<ul class="nav nav-pills nav-stacked" role="tablist">
 							<li>
@@ -152,8 +151,7 @@
 				</div>
 			<div class="col-xs-9" ui-view></div>
 
-			</div>
-		</div>
+		
 
 	
 
@@ -162,18 +160,15 @@
 
 
 	</div>
-	</div>
-	</div>
+
 	
-	<div class="container">
-	<div class="row">
+	
 	<div class="col-md-12">
 	<div class="footer">
 		footer
 	</div>
 	</div>
-	</div>
-	</div>
+	
 	
 	
 

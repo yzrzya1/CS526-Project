@@ -1,4 +1,4 @@
-var app2 = angular.module('loginApp',[]);
+
 
 var routerApp = angular.module('routerApp',['ui.router','home','hcc','trends','dashboardApp']);
 
@@ -39,7 +39,20 @@ routerApp.config(
 						console.log('Error:' + data);
 					});
 						}
-					});
+					})
+
+
+		.state('its.list', {
+            url: '/list',
+            templateUrl: 'its-list.html',
+            controller: function($scope) {
+                $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
+            }
+        })
+        .state('its.paragraph', {
+            url: '/paragraph',
+            template: 'I could sure use a drink right now.'
+        });
 });
 
 
